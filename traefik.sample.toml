@@ -66,6 +66,13 @@
 #
 # address = ":8080"
 
+# SSL certificate and key used
+#
+# Optional
+#
+# CertFile = "traefik.crt"
+# KeyFile = "traefik.key"
+
 
 ################################################################
 # File configuration backend
@@ -170,6 +177,41 @@
 # Optional
 #
 # filename = "marathon.tmpl"
+
+
+################################################################
+# Consul KV configuration backend
+################################################################
+
+# Enable Consul KV configuration backend
+#
+# Optional
+#
+# [consul]
+
+# Consul server endpoint
+#
+# Required
+#
+# endpoint = "http://127.0.0.1:8500"
+
+# Enable watch Consul changes
+#
+# Optional
+#
+# watch = true
+
+# Prefix used for KV store.
+#
+# Optional
+#
+# prefix = "traefik"
+
+# Override default configuration template. For advanced users :)
+#
+# Optional
+#
+# filename = "consul.tmpl"
 
 
 
